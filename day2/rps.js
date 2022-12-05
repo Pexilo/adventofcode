@@ -8,7 +8,7 @@ fs.readFile(path.join(__dirname, "input.txt"), "utf8", (err, data) => {
   rounds = data.split("\r\n").map((p) => p.split(" "));
 
   console.log("Base ->", { rounds });
-  console.log({ Part1: rockPaperSissors(rounds) }); // Part 1
+  console.log({ Part1: rockPaperSissors(rounds) }); // PART 1
   ultraTopSecretStrat(rounds); // PART 2
 });
 

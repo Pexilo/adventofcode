@@ -8,7 +8,7 @@ fs.readFile(path.join(__dirname, "input.txt"), "utf8", (err, data) => {
   let sortedElfs = [];
   data
     .split("\n\r")
-    .map((e) => e.replace(/\r/g, "").split("\n"))
+    .map((e) => e.trim().replace(/\r/g, "").split("\n"))
     .forEach((elf) => {
       sortedElfs.push(elf.filter((n) => n));
     });
